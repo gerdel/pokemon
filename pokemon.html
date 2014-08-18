@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Escoje tu Pokemon Favorito</title>
+	<script type="text/javascript" src="pokemon.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<style>
+		body{
+			background-color:#222;
+			margin:0;
+		}
+		.all,footer,aside{
+			float:left;
+			
+		}
+		header{
+			background-color:#1d9742;
+			padding:1em 1em;
+			text-align:center;
+			color:#cddecf;
+		}
+		.all{
+			position:relative;
+			width:60%;
+			background-color:#fffffa;
+			margin-left:4em;
+			top:2em;
+			height:32em;
+			text-align:center;
+		}
+		aside{
+			position:relative;
+			width:30%;
+			background-color:#233;
+			left:2em;
+			text-align:center;
+			top:2em;
+			height:32em;
+			
+		}
+		footer{
+			position:relative;
+			background-color:#4186a5;
+			width:100%;
+			top:5em;
+			padding:2em 2em;
+			box-sizing:border-box;
+			text-align:center;
+		}
+		.pokemon{
+			position:relative;
+			min-width:50px;
+			max-width:60px;
+			border-radius:50%;
+			/*background-color:#5979B9;*/
+			width:30%;
+			left:-2em;
+			top:-2em;
+			margin-top:0.3em;
+			cursor:pointer;
+		}
+		.letra{
+			position:relative;
+			left:-5.4em;
+			float:right;
+			top:-1.6em;
+			color:#fefffe;
+			font-family: 'Lobster Two', cursive;
+			font-size:1.2em;
+		}
+		.pokemon_mostrado{
+			text-align:center;
+			min-width:250px;
+			max-width:50em;
+		}
+		.all:nth-last-child(2){
+			background-color:#6a85d0;
+		}
+		.datos{
+			position:relative;
+			background-color:#06C359;
+			height:17.3em;
+			top:-1.4em;
+		}
+
+		.datos > h1{
+			font-family: 'Dancing Script', cursive;
+			color:#cddecf;
+		}
+		.p{
+			position:relative;
+			font-size:12pt;
+			color:white;
+			font-family: "arial";
+			top:-1.3em;
+			font-family: 'PT Sans Narrow', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Elije tu Pokemón Favorito</h1>
+	</header>
+
+	<aside>
+		<h2>Cuál es tu Pokemón favorito?</h2><br/>
+		<p class="letra">Samurott</p>
+		<img src="Samurott.png" onClick="poke0()" class="pokemon"><br/>
+		<p class="letra">Floatzel</p>
+		<img src="Floatzel.png" onClick="poke7()" class="pokemon"><br/>
+		<p class="letra">Raichu</p>
+		<img src="Raichu.png" onClick="poke2()" class="pokemon"><br/>
+		<p class="letra">Mienshao</p>
+		<img src="Mienshao.png" onClick="poke3()" class="pokemon"><br/>
+		<p class="letra">Luxray</p>
+		<img src="Luxray.png" onClick="poke4()" class="pokemon"><br/>
+		<p class="letra">Arceus</p>
+		<img src="Arceus.png" onClick="poke5()" class="pokemon"><br/>
+		<p class="letra">Giratina</p>
+		<img src="Giratina_modificada.png" onClick="poke6()" class="pokemon"><br/>
+	</aside>
+
+	<div class="all">
+		<div id="pok">
+			<img src="Samurott.png" id="poke1" class="pokemon_mostrado"><br/>
+		</div>
+		<div class="datos" >
+			<h1>Datos del Pokemón</h1>
+			<div id="cambio" class="p">
+				<p>Nombre : Samurott</p>
+				<p>Tipo : Agua</p>
+				<p>Especie : Marino</p>
+				<p>Habilidad : Acuatico</p>
+				<p>Vida : 100%</p>
+				<p>Resistencia : 100%</p>
+				<p>Ataque : 80%</p>
+			</div>	
+		</div>
+	</div>
+	<footer>
+		<p>&copy 2014</p>
+		<h2> Creado por Gerson Ortiz, estudiante de MerojandolaWeb</h2>
+		<a href="https://mejorando.la">mejorando.la</a>
+	</footer>
+</body>
+</html>
